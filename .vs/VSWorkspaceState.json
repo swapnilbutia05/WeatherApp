@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\templates",
+    "\\the_weather",
+    "\\the_weather\\migrations",
+    "\\weather"
+  ],
+  "SelectedNode": "\\the_weather\\models.py",
+  "PreviewInSolutionExplorer": false
+}
