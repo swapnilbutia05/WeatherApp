@@ -4,8 +4,8 @@ from .models import City
 from .forms import CityForm
 # Create your views here.
 def weather(request):
-	url = "https://openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=b6907d289e10d714a6e88b30761fae22"
-	
+	url = "https://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=4ef7ac0dddae60fd1a348d2bd344d3e8"
+
 
 
 	if request.method == 'POST':
@@ -31,7 +31,7 @@ def weather(request):
 
 
 		weather_data.append(city_weather)
-	
+
 
 	context = {'weather_data' : weather_data, 'form': form}
 	return render(request, 'abc.html', context)
